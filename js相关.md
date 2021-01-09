@@ -30,7 +30,7 @@ Promise.all1 = function (promises) {
 
 3.订阅者通过事件调度中心提供的subscribe方法进行事件订阅操作，他不关心有没有人发布事件，但是只要自己订阅的事件发生，他就做出响应
 
-#特点
+### 特点
 
 .发布订阅模式中，对于发布者Publisher和订阅者Subscriber没有特殊的约束，他们好似是匿名活动，借助事件调度中心提供的接口发布和订阅事件，互不了解对方是谁。
 
@@ -38,7 +38,7 @@ Promise.all1 = function (promises) {
 
 .易理解，可类比于DOM事件中的dispatchEvent和addEventListener。
 
-#缺点
+### 缺点
 
 .当事件类型越来越多时，难以维护，需要考虑事件命名的规范，也要防范数据流混乱。
 
